@@ -98,3 +98,15 @@ model-viewer {
   border-radius: 18px;
   border: 1px solid #DADCE0;
 }
+
+#info-button:active {
+  background-color: #E8EAED;
+}
+
+#info-button:focus {
+  outline: none;
+}
+
+#info-button:focus-visible {
+  outline: 1px solid #4285f4;
+}
