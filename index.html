@@ -18,10 +18,18 @@
       <button slot="ar-button" id="ar-button">
           View in AR
       </button>
-	  <img src="noun-info-1582929-275DBA.png" id="info-icon" align="center" style="width: 25px;padding-left: 340px;padding-top: 250px;">
-	  <img src="noun-youtube-897674-DA0A23.png" id="youtube-icon" align="center" style="width: 25px;padding-left: 340px;padding-top: 270px;">
+	  <img src="noun-youtube-897674-DA0A23.png" onclick="openVideo()" id="youtube-icon" align="center" style="width: 50px;padding-left: 327px;padding-top: 250px;">
+	  <img src="noun-info-1582929-275DBA.png" onclick="showText()" id="info-icon" align="center" style="width: 30px;padding-left: 337px;">
     </model-viewer>  
     <script src="script.js"></script>
+	<script>
+		var openVideo = function(){
+			window.open("https://www.youtube.com/watch?v=7gquYRxLMFI", '_blank').focus();
+		}
+		var showText = function(){
+			alert("Welcome to fiducia");
+		}
+	</script>
     <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </body>
