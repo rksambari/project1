@@ -13,3 +13,5 @@ const onProgress = (event) => {
   }
 };
 document.querySelector('model-viewer').addEventListener('progress', onProgress);
+document.getElementById("popup1").style.display = 'none';
+
